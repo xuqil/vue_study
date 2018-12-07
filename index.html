@@ -9,11 +9,16 @@
 <body>
     <!-- vue-app是根容器 所有的内存在于下面的div中-->
     <div id="vue-app">
-        <h1>{{ greet("night") }}</h1>
-        <p>名字：{{ name }}</p>
-        <a v-bind:href="website">wed开发</a>
-        <input type="text" v-bind:value="name">
-        <p v-html="websiteTag"></p>
+        <h1></h1>事件</h1>
+        <button @click="add">涨一岁</button>
+        <button v-on:click="subtract">减一岁</button>
+        <button v-on:dblclick="adc(10)">涨十岁</button>
+        <button @dblclick="subc(10)">减十岁</button>
+        <p>我的年龄{{age}}</p>
+
+        <div id="canvas" v-on:mousemove="updateXY">
+            {{x}}, {{y}}
+        </div>
     </div>
     <script src="app.js"></script>
 </body>
