@@ -2,7 +2,12 @@
 new Vue({
     el:"#vue-app",
     data:{
-        name:"hello world"
+        name:"小明"
+    },
+    methods:{ //创建方法表
+        greet: function (time) {  // 定义greet方法
+            return 'Good ' + time + " " + this.name + "!";
+        }
     }
 });
 

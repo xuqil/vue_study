@@ -7,9 +7,10 @@
     <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
-    <!-- vue-app是根容器 -->
+    <!-- vue-app是根容器 所有的内存在于下面的div中-->
     <div id="vue-app">
-        <h1>{{ name }}</h1>
+        <h1>{{ greet("night") }}</h1>
+        <p>名字：{{ name }}</p>
     </div>
     <script src="app.js"></script>
 </body>
