@@ -11,6 +11,9 @@
     <div id="vue-app">
         <h1>{{ greet("night") }}</h1>
         <p>名字：{{ name }}</p>
+        <a v-bind:href="website">wed开发</a>
+        <input type="text" v-bind:value="name">
+        <p v-html="websiteTag"></p>
     </div>
     <script src="app.js"></script>
 </body>
